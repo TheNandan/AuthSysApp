@@ -1,0 +1,27 @@
+{
+  "name": "authsysapp",
+  "version": "1.0.0",
+  "description": "Authentication System Application using ( Node | Express | MongoDb )",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheNandan/AuthSysApp.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Nandan S",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.9.1",
+    "morgan": "^1.10.0"
+  }
+}

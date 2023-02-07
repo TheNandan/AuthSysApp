@@ -1,0 +1,44 @@
+<%- include('partials/_header')  %> 
+
+<%- include('partials/_flash')  %> 
+
+<div class="container" id="signupform">
+    <div class="form-title">
+        <h1><%= title %></h1>
+    </div>
+    <form action="/signup" method="post">
+    <div class="form">
+
+        <div class="row g-3 inputmargin">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="fname">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="lname">
+            </div>
+          </div>
+
+          <div class="col inputmargin">
+            <input type="text" class="form-control" placeholder="username" aria-label="username" id="username" name="uname">
+          </div>
+
+          <div class="col inputmargin">
+            <input type="email" class="form-control" placeholder="Email" aria-label="Email" name="email">
+          </div>
+
+          <div class="col inputmargin">
+            <input type="password" class="form-control" placeholder="Password" aria-label="Password" name="pass">
+          </div>
+
+          <div class="col inputmargin">
+            <input type="password" class="form-control" placeholder="Confirm Password" aria-label="Confirm Password" name="cpass">
+          </div>
+
+          <div class="btn-center">
+            <button class="btn btn-primary inputmargin "> Sign Up </button>
+          </div>
+    </div>
+  </form>
+</div>
+
+<%- include('partials/_footer')  %> 

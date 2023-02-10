@@ -1,15 +1,15 @@
 const route = require('express').Router()
-const services = require('../services/service')
+const controller = require('../controllers/controller')
 
-route.get('/',services.indexRoute)
-route.get('/signup',services.signupRoute)
-route.get('/signin',services.signinRoute)
-route.get('/dashboard',services.dashRoute)
-route.get('/logout',services.logoutRoute)
-route.post('/signup',services.postSignup)
-route.post('/signin',services.postSignin)
+route.get('/',controller.indexRoute)
+route.get('/signup',controller.signupRoute)
+route.get('/signin',controller.signinRoute)
+route.get('/dashboard',controller.dashRoute)
+route.get('/logout',controller.logoutRoute)
+route.post('/signup',controller.postSignup)
+route.post('/signin',controller.postSignin)
 
-route.get('*',services.x404Route)
+route.get('*',controller.x404Route)
 
 
 module.exports = route
